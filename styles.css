@@ -319,3 +319,11 @@ textarea { min-height: 90px; resize: vertical; line-height: 1.5; }
 .scr .s-title, .scr .s-head, .scr .s-clock, .unlock b { font-family: var(--font-scary); font-weight: 400; }
 .scr .s-url { font-family: "Rubik", sans-serif; }
 .scr .map text { font-weight: 400; }
+.improv-toggle { margin-top: 22px; width: 100%; padding: 12px; font-size: 1rem; border-style: dashed; }
+.improv-toggle.on { border-color: var(--lamp); color: var(--lamp); }
+.improv { margin-top: 12px; border-color: var(--lamp); gap: 16px; }
+.improv-rules { margin: 0; padding-inline-start: 20px; display: flex; flex-direction: column; gap: 6px; font-size: .92rem; }
+.improv-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+@media (max-width: 700px) { .improv-grid { grid-template-columns: 1fr; } }
+.improv-out { margin: 0; padding: 10px 12px; background: var(--surface-2); border-radius: 6px; min-height: 3.2em; display: flex; flex-direction: column; gap: 4px; }
+.improv details summary { cursor: pointer; }
